@@ -1,0 +1,25 @@
+{
+  "name": "comp308-w2019",
+  "version": "1.0.0",
+  "description": "Acadmic Course",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GOSSII/COMP308-W2019.git"
+  },
+  "author": "Dipesh Goswami",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GOSSII/COMP308-W2019/issues"
+  },
+  "homepage": "https://github.com/GOSSII/COMP308-W2019#readme",
+  "dependencies": {
+    "bootstrap": "^4.2.1",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.6"
+  }
+}
