@@ -1,0 +1,17 @@
+npm init
+- Developer Dependency
+- project Dependency
+
+start node server 
+npm start 
+node server.js
+
+
+installtion
+===========
+npm i nodemon -g
+
+
+Question
+========
+what is next ?
