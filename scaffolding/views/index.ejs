@@ -8,31 +8,59 @@
   <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="Content/app.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 </head>
 <body>
    <!-- Main Content start -->
    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">COMP308</a>
+    <a class="navbar-brand" href="/">COMP308</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
   
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
+      <% if (title == "Home") { %>
         <li class="nav-item active">
-          <a class="nav-link" href="#"><i class="fa fa-lg fa-home"></i> Home <span class="sr-only">(current)</span></a>
+      <% } else { %>
+      <li class="nav-item">
+      <% } %>
+          <a class="nav-link" href="/"><i class="fab fa-lg fa-atlassian"></i> Home <span class="sr-only">(current)</span></a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#"><i class="fa fa-lg fa-info"></i> About</a>
+        
+        <% if (title == "About") { %>
+        <li class="nav-item active">
+      <% } else { %>
+      <li class="nav-item">
+      <% } %>
+          <a class="nav-link" href="/about"><i class="fa fa-lg fa-edit"></i> About</a>
         </li>
-        <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fa fa-lg fa-briefcase"></i> Products</a>
+
+
+        <% if (title == "Product") { %>
+        <li class="nav-item active">
+      <% } else { %>
+      <li class="nav-item">
+      <% } %>
+                <a class="nav-link" href="/product"><i class="fab fa-lg fa-apple"></i> Products</a>
         </li>
-        <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fa fa-lg fa-birthday-cake"></i> Service</a>
+        
+
+        <% if (title == "Services") { %>
+        <li class="nav-item active">
+      <% } else { %>
+      <li class="nav-item">
+      <% } %>
+                <a class="nav-link" href="/services"><i class="fab fa-lg fa-servicestack"></i> Service</a>
         </li>
-        <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fa fa-lg fa-phone"></i> Contact</a>
+        
+
+        <% if (title == "Contact") { %>
+        <li class="nav-item active">
+      <% } else { %>
+      <li class="nav-item">
+      <% } %>
+                <a class="nav-link" href="/contact"><i class="fa fa-lg fa-headset"></i> Contact</a>
         </li>
     </div>
   </nav>
